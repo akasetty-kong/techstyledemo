@@ -1,0 +1,54 @@
+_id: req_a8f597348b1a488b9942fc44c0b7c9e1
+type: Request
+parentId: fld_39d61750f2e142f3836a8ec733767e08
+modified: 1716266975136
+created: 1716265384362
+url: "{{ _.base_url }}{{ _.path }}/Users"
+name: Create User
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "schemas": [
+            "urn:ietf:params:scim:schemas:core:2.0:User",
+            "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"],
+        "externalId": "{% faker 'randomUUID' %}",
+        "userName": "{{ _.UserName }}",
+        "active": true,
+        "emails": [{
+            "primary": true,
+            "type": "work",
+            "value": "{{ _.UserName }}"
+        }],
+        "meta": {
+            "resourceType": "User"
+        },
+        "name": {
+            "formatted": "givenName familyName",
+            "familyName": "{{ _.LastName }}",
+            "givenName": "{{ _.FirstName }}"
+        },
+        "roles": []
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/9.2.0
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+preRequestScript: ""
+metaSortKey: -1716266968542
+isPrivate: false
+pathParameters: []
+afterResponseScript: null
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,28 @@
+_id: req_211881e3cbf443ddbfe3caceae395eb6
+type: Request
+parentId: fld_39d61750f2e142f3836a8ec733767e08
+modified: 1716266982460
+created: 1716266359701
+url: "{{ _.base_url }}{{ _.path }}/Users/2bfe3b08-b03d-461e-aab1-5c9c1a71c21b"
+name: Get NonExistent User
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/9.2.0
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+preRequestScript: ""
+metaSortKey: -1716266968342
+isPrivate: false
+pathParameters: []
+afterResponseScript: null
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

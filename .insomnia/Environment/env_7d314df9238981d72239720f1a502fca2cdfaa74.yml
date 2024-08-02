@@ -1,0 +1,16 @@
+_id: env_7d314df9238981d72239720f1a502fca2cdfaa74
+type: Environment
+parentId: wrk_76a9cf06dff44f24b8a42a174c911dde
+modified: 1716265049399
+created: 1716265010829
+name: Base Environment
+data:
+  base_url: http://ak-dev-ubuntu:5000/
+  path: /scim/v2
+dataPropertyOrder:
+  "&":
+    - base_url
+    - path
+color: null
+isPrivate: false
+metaSortKey: 1716265010829

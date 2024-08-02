@@ -1,0 +1,14 @@
+_id: fld_39d61750f2e142f3836a8ec733767e08
+type: RequestGroup
+parentId: wrk_76a9cf06dff44f24b8a42a174c911dde
+modified: 1716267020904
+created: 1716266945034
+name: User Creation
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1716267006823
+preRequestScript: null
+afterResponseScript: null
+authentication: null
+headers: null

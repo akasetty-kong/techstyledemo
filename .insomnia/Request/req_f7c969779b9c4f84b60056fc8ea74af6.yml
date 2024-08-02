@@ -1,0 +1,28 @@
+_id: req_f7c969779b9c4f84b60056fc8ea74af6
+type: Request
+parentId: fld_39d61750f2e142f3836a8ec733767e08
+modified: 1716266991596
+created: 1716265268997
+url: "{{ _.base_url }}{{ _.path }}/Users"
+name: Get Users
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/9.2.0
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+preRequestScript: ""
+metaSortKey: -1716266968142
+isPrivate: false
+pathParameters: []
+afterResponseScript: null
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

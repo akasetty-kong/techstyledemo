@@ -1,0 +1,29 @@
+_id: req_7fbbaee729cb4abab50ceb0211ee0a94
+type: Request
+parentId: fld_39d61750f2e142f3836a8ec733767e08
+modified: 1716266988513
+created: 1716266503653
+url: "{{ _.base_url }}{{ _.path }}/Users?filter=userName eq {% prompt 'User
+  Name', 'userName in email format', 'Andy33@hotmail.com', '', false, true %} "
+name: Get Query User
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/9.2.0
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+preRequestScript: ""
+metaSortKey: -1716266968242
+isPrivate: false
+pathParameters: []
+afterResponseScript: null
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

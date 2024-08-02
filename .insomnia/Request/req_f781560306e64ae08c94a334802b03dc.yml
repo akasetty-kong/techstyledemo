@@ -1,0 +1,48 @@
+_id: req_f781560306e64ae08c94a334802b03dc
+type: Request
+parentId: fld_c7d2ecdf52e34fd6953cfb57ed36031d
+modified: 1716267334096
+created: 1716267026722
+url: "{{ _.base_url }}{{ _.path }}/Users/{% response 'body',
+  'req_d8375c88c790472d839eb547f85e6201', 'b64::JC5pZA==::46b', 'never', 60 %}"
+name: "Patch Multivalued "
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "schemas": ["urn:ietf:params:scim:api:messages:2.0:PatchOp"],
+        "Operations": [
+                {
+                "op": "Replace",
+                "path": "emails[type eq \"work\"].value",
+                "value": "updatedEmail@microsoft.com"
+                },
+                {
+                "op": "Replace",
+                "path": "name.familyName",
+                "value": "updatedFamilyName"
+                }
+        ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/9.2.0
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+preRequestScript: ""
+metaSortKey: -1716267026722
+isPrivate: false
+pathParameters: []
+afterResponseScript: null
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
